@@ -30,6 +30,8 @@
 		5C5949CA153ACC510023B034 /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5949C7153ACC510023B034 /* AwesomeMenu.m */; };
 		5C5949CB153ACC510023B034 /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5949C9153ACC510023B034 /* AwesomeMenuItem.m */; };
 		5C93DC61148673F2003029CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C93DC60148673F2003029CA /* QuartzCore.framework */; };
+		BED6AAB81ACECBE3004FBE5C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED6AAB71ACECBE3004FBE5C /* Storyboard.storyboard */; };
+		BED6AABB1ACECC0D004FBE5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6AABA1ACECC0D004FBE5C /* ViewController.m */; };
 		DCDD5EA716E5B2A1005D7B61 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDD5EA616E5B2A1005D7B61 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,9 @@
 		5C5949C8153ACC510023B034 /* AwesomeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuItem.h; sourceTree = "<group>"; };
 		5C5949C9153ACC510023B034 /* AwesomeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuItem.m; sourceTree = "<group>"; };
 		5C93DC60148673F2003029CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BED6AAB71ACECBE3004FBE5C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		BED6AAB91ACECC0D004FBE5C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BED6AABA1ACECC0D004FBE5C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DCDD5EA616E5B2A1005D7B61 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +144,9 @@
 				5C3FF3721486564E0098EE93 /* AppDelegate.h */,
 				5C3FF3731486564E0098EE93 /* AppDelegate.m */,
 				5C3FF36A1486564E0098EE93 /* Supporting Files */,
+				BED6AAB71ACECBE3004FBE5C /* Storyboard.storyboard */,
+				BED6AAB91ACECC0D004FBE5C /* ViewController.h */,
+				BED6AABA1ACECC0D004FBE5C /* ViewController.m */,
 			);
 			path = AwesomeMenu;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 				5C03649F1488A5D4000CE00F /* bg-addbutton.png in Resources */,
 				5C0364A01488A5D4000CE00F /* bg-addbutton@2x.png in Resources */,
 				5C0364A11488A5D4000CE00F /* bg-menuitem-highlighted.png in Resources */,
+				BED6AAB81ACECBE3004FBE5C /* Storyboard.storyboard in Resources */,
 				5C0364A21488A5D4000CE00F /* bg-menuitem-highlighted@2x.png in Resources */,
 				5C0364A31488A5D4000CE00F /* bg-menuitem.png in Resources */,
 				5C0364A41488A5D4000CE00F /* bg-menuitem@2x.png in Resources */,
@@ -245,6 +254,7 @@
 				5C3FF3741486564E0098EE93 /* AppDelegate.m in Sources */,
 				5C5949CA153ACC510023B034 /* AwesomeMenu.m in Sources */,
 				5C5949CB153ACC510023B034 /* AwesomeMenuItem.m in Sources */,
+				BED6AABB1ACECC0D004FBE5C /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

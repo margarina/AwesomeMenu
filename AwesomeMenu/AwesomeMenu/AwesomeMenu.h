@@ -36,6 +36,7 @@
 @property (nonatomic, assign) CGFloat animationDuration;
 @property (nonatomic, assign) BOOL    rotateAddButton;
 
+- (instancetype)initWithStartItem:(AwesomeMenuItem*)startItem menuItems:(NSArray *)menuItems;
 - (id)initWithFrame:(CGRect)frame startItem:(AwesomeMenuItem*)startItem menuItems:(NSArray *)menuItems;
 
 - (id)initWithFrame:(CGRect)frame startItem:(AwesomeMenuItem*)startItem optionMenus:(NSArray *)aMenusArray DEPRECATED_MSG_ATTRIBUTE("use -initWithFrame:startItem:menuItems: instead.");

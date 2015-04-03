@@ -49,30 +49,21 @@ static CGPoint RotateCGPointAroundCenter(CGPoint point, CGPoint center, float an
 
 #pragma mark - Initialization & Cleaning up
 
+- (instancetype)initWithStartItem:(AwesomeMenuItem *)startItem menuItems:(NSArray *)menuItems
+{
+    self = [super init];
+    if (self)
+    {
+        [self commonSetupWithStartItem:startItem menuItems:menuItems];
+    }
+    return self;
+}
+
 - (id)initWithFrame:(CGRect)frame startItem:(AwesomeMenuItem*)startItem menuItems:(NSArray *)menuItems
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
-        self.nearRadius = kAwesomeMenuDefaultNearRadius;
-        self.endRadius = kAwesomeMenuDefaultEndRadius;
-        self.farRadius = kAwesomeMenuDefaultFarRadius;
-        self.timeOffset = kAwesomeMenuDefaultTimeOffset;
-        self.rotateAngle = kAwesomeMenuDefaultRotateAngle;
-        self.menuWholeAngle = kAwesomeMenuDefaultMenuWholeAngle;
-        self.startPoint = CGPointMake(kAwesomeMenuDefaultStartPointX, kAwesomeMenuDefaultStartPointY);
-        self.expandRotation = kAwesomeMenuDefaultExpandRotation;
-        self.closeRotation = kAwesomeMenuDefaultCloseRotation;
-        self.animationDuration = kAwesomeMenuDefaultAnimationDuration;
-        self.rotateAddButton = YES;
-        
-        self.menuItems = menuItems;
-        
-        // assign startItem to "Add" Button.
-        self.startButton = startItem;
-        self.startButton.delegate = self;
-        self.startButton.center = self.startPoint;
-        [self addSubview:self.startButton];
+        [self commonSetupWithStartItem:startItem menuItems:menuItems];
     }
     return self;
 }
@@ -80,6 +71,30 @@ static CGPoint RotateCGPointAroundCenter(CGPoint point, CGPoint center, float an
 - (id)initWithFrame:(CGRect)frame startItem:(AwesomeMenuItem*)startItem optionMenus:(NSArray *)aMenusArray
 {
     return [self initWithFrame:frame startItem:startItem menuItems:aMenusArray];
+}
+
+- (void)commonSetupWithStartItem:(AwesomeMenuItem*)startItem menuItems:(NSArray *)menuItems
+{
+    self.backgroundColor = [UIColor clearColor];
+    self.nearRadius = kAwesomeMenuDefaultNearRadius;
+    self.endRadius = kAwesomeMenuDefaultEndRadius;
+    self.farRadius = kAwesomeMenuDefaultFarRadius;
+    self.timeOffset = kAwesomeMenuDefaultTimeOffset;
+    self.rotateAngle = kAwesomeMenuDefaultRotateAngle;
+    self.menuWholeAngle = kAwesomeMenuDefaultMenuWholeAngle;
+    self.startPoint = CGPointMake(kAwesomeMenuDefaultStartPointX, kAwesomeMenuDefaultStartPointY);
+    self.expandRotation = kAwesomeMenuDefaultExpandRotation;
+    self.closeRotation = kAwesomeMenuDefaultCloseRotation;
+    self.animationDuration = kAwesomeMenuDefaultAnimationDuration;
+    self.rotateAddButton = YES;
+    
+    self.menuItems = menuItems;
+    
+    // assign startItem to "Add" Button.
+    self.startButton = startItem;
+    self.startButton.delegate = self;
+    self.startButton.center = self.startPoint;
+    [self addSubview:self.startButton];
 }
 
 #pragma mark - Getters & Setters
